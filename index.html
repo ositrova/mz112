@@ -14,44 +14,54 @@
 
   <body>
     <!-- header -->
-    <header>
-      <a class="link" href="./index.html">
-        <img src="" alt="" />
-      </a>
-      <p>ТОВ "Мостобудівельний загін №112"</p>
-
-      <nav>
-        <ul class="list">
-          <li>
-            <a class="link" href="./index.html"> Головна </a>
-          </li>
-          <li>
-            <a class="link" href="">Галерея</a>
-          </li>
-          <li>
-            <a class="link" href="">Оренда</a>
-          </li>
-          <li>
-            <a class="link" href="">Про нас</a>
-          </li>
-          <li>
-            <a class="link" href="">Контакти</a>
-          </li>
-          <li lang="en">
-            <a class="link" href="">Facebook</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__box">
+          <a class="header__logo link" href="./index.html">
+            <img src="./images/logo/logo.jpg" alt="logo" />
+          </a>
+          <p class="header__name">ТОВ "Мостобудівельний загін №112"</p>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html"> Головна </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Галерея</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Оренда</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакти</a>
+            </li>
+            <li class="nav__item" lang="en">
+              <a class="nav__link link" href="">Facebook</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu__btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <!-- hero -->
-      <section>
+      <!-- <section>
         <h1 class="visually-hidden">ТОВ "Мостобудівельний загін №112"</h1>
-        <img src="" alt="" />
-      </section>
+        <video poster="" width="" controls>
+          <source src="" type="video/webm" />
+        </video>
+      </section> -->
 
       <!-- about us -->
-      <section>
+      <!-- <section>
         <ul class="list">
           <li>
             <span>1944</span>
@@ -62,48 +72,59 @@
             <p>Завершених проектів</p>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!-- partner -->
-      <section>
+      <!-- <section>
         <h2>Наші партнери</h2>
-        <ul>
+        <ul class="list">
           <li><img src="" alt="lego technic" /></li>
           <li><img src="" alt="Мостобуд" /></li>
           <li><img src="" alt="Peri" /></li>
           <li><img src="" alt="Державна служба автомобільних доріг" /></li>
           <li><img src="" alt="Bosch" /></li>
         </ul>
-      </section>
+      </section> -->
 
       <!-- geography -->
-      <section>
+      <!-- <section>
         <h2>Географія діяльності</h2>
         <img src="" alt="" />
-      </section>
+      <!-- </section> -->
     </main>
     <!-- footer -->
-    <footer>
+    <!-- <footer>
       <p>ТОВ "Мостобудівельний загін №112"</p>
-    </footer>
+    </footer> -->
 
     <!-- Mobile menu -->
-    <div id="mobile-menu">
-      <button></button>
+    <div class="menu container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
 
-      <ul class="list">
-        <li>
-          <a class="link" href="">Студія</a>
+      <!-- <ul class="menu__list list">
+        <li class="menu__item">
+          <a class="menu__link link" href="">Головна</a>
         </li>
-        <li>
-          <a class="link" href="" class="link">Портфоліо</a>
+        <li class="menu__item">
+          <a class="menu__link link" href="">Галерея</a>
         </li>
-        <li>
-          <a class="link" href="">Контакти</a>
+        <li class="menu__item">
+          <a class="menu__link link" href="">Оренда</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="">Про нас</a>
         </li>
       </ul>
 
-      <a class="link" href="https://facebook.com">Facebook</a>
-    </div>
+      <div class="menu__socials"><a class="link" href="https://facebook.com">Facebook</a></div>
+    </div> -->
+
+    <!-- mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer src="./js/mobile_menu.js"></script>
   </body>
 </html>
