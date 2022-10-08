@@ -337,6 +337,18 @@ img {
   fill: var(--socials-color-txt);
 }
 
+@media screen and (min-width: 1200px) {
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;

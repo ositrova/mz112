@@ -1,7 +1,14 @@
 .header {
 }
 
-.header__box {}
+.header__box {
+@media screen and (min-width:1200px) {
+        display: flex;
+            align-items: center;
+            gap: 20px;
+    }
+    
+}
 
 .header__container {
     display: flex;
