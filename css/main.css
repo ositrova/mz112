@@ -449,4 +449,5 @@ img {
 .nav__link-icon {
   fill: #fff;
   background-color: var(--blue-color-txt);
+  padding: 4px;
 }/*# sourceMappingURL=main.css.map */
