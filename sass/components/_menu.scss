@@ -12,6 +12,12 @@
         cursor: pointer;
     
         margin-left: auto;
+        transition: fill var(--animation);
+
+        &:hover,
+            :focus {
+                fill: var(--blue-color-txt);
+            }
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -30,7 +36,7 @@
         height: 100%;
         padding: 40px 48px;
     
-        background-color:beige;
+        background-color: #fff;
     
         transform: translateX(100%);
         transition: transform 2000ms;
@@ -54,15 +60,50 @@
         right: 15px;
         padding: 0;
         border: none;
-        background-color:aquamarine;
+        background-color: #fff;
         cursor: pointer;
-        fill: black
+        fill: var(--black-color-txt);
+        transition: fill var(--animation);
+        &:hover,
+            :focus {
+                fill: var(--blue-color-txt);
+            }
 }
 
-.menu__list {}
+.menu__list {
+    margin-bottom: auto;
+}
 
-.menu__item {}
+.menu__item {
+    font-weight: 700;
+        font-size: 35px;
+        line-height: calc(47/35);
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+    
+        color: var(--black-color-txt);
+        transition: color var(--animation);
+        
+            &:hover,
+            :focus {
+                color: var(--blue-color-txt);
+            }
+        
+}
 
-.menu__link {}
+.menu__link {
+}
 
-.menu__socials {}
+.menu__socials {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: calc(35/20);
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+    color: var(--socials-color-txt);
+}
+
+.menu__socials-icon {
+    
+    fill: var(--socials-color-txt)
+}

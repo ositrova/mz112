@@ -7,7 +7,9 @@
     <title>Мз 112 | Мостобудівельний загін №112</title>
 
     <!--fonts-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -40,7 +42,11 @@
               <a class="nav__link link" href="">Контакти</a>
             </li>
             <li class="nav__item" lang="en">
-              <a class="nav__link link" href="">Facebook</a>
+              <a class="nav__link link" href="https://facebook.com">
+                <svg class="nav__link-icon" overflow="visible" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
@@ -105,7 +111,7 @@
         </svg>
       </button>
 
-      <!-- <ul class="menu__list list">
+      <ul class="menu__list list">
         <li class="menu__item">
           <a class="menu__link link" href="">Головна</a>
         </li>
@@ -120,8 +126,15 @@
         </li>
       </ul>
 
-      <div class="menu__socials"><a class="link" href="https://facebook.com">Facebook</a></div>
-    </div> -->
+      <div class="menu__socials">
+        <a class="link" href="https://facebook.com">
+          <svg class="menu__socials-icon" width="20" height="20">
+            <use href="./images/icons.svg#facebook"></use>
+          </svg>
+          Facebook
+        </a>
+      </div>
+    </div>
 
     <!-- mobile menu -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
