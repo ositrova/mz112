@@ -355,6 +355,11 @@ img {
   text-transform: uppercase;
   color: var(--blue-color-txt);
 }
+@media screen and (min-width: 1200px) {
+  .header__name {
+    font-size: 20px;
+  }
+}
 
 .nav {
   margin-left: auto;
@@ -389,6 +394,11 @@ img {
 .nav__item:hover,
 .nav__item :focus {
   color: var(--blue-color-txt);
+}
+@media screen and (min-width: 1200px) {
+  .nav__item {
+    font-size: 20px;
+  }
 }
 
 .nav__link {
